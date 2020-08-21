@@ -1,0 +1,9 @@
+database:
+  url:
+  driver: "org.postgresql.Driver"
+  host: "172.17.0.2"
+  port: "5432"
+  database: "crud_app"
+  prefix: "jdbc:postgresql://"
+  user: "postgres"
+  password: "password1"

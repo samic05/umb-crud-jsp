@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'war'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.yaml:snakeyaml:1.26'
+    compile 'org.slf4j:slf4j-api:1.7.30'
+    compile 'org.postgresql:postgresql:42.2.14'
+    compile'org.apache.commons:commons-lang3:3.11'
+    providedCompile 'javax:javaee-web-api:8.0'
+    providedCompile'javax.enterprise:cdi-api:2.0'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    testImplementation 'junit:junit:4.13'
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+}
